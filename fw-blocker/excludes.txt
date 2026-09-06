@@ -1,0 +1,14 @@
+kvc.exe
+bssndrpt64.exe
+bugsplathd64.exe
+crashreport.exe
+crashreporter.exe
+dxsetup.exe
+rapidcrc.exe
+start_protected_game.exe
+unins000.exe
+unitycrashhandler64.exe
+vc_redist.x64.exe
+vc_redist.x86.exe
+vcredist_x64.exe
+vcredist_x86.exe

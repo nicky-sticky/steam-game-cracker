@@ -1,0 +1,138 @@
+{
+  "config_settings": {
+    "apply_emu": true,
+    "apply_steam_stub_unpacker": true,
+    "apply_hypervisor": false,
+    "copy_extra_files": false,
+    "generate_crack_only": false
+  },
+  "emu_settings": {
+    "emulator": "RUNE",
+    "rune_settings": {
+      "settings": {
+        "account_id": "22202",
+        "user_name": "steam_user",
+        "language": "english",
+        "country": "US",
+        "lobby_enabled": true,
+        "lobby_port": 31183,
+        "overlays": true,
+        "offline": false,
+        "block_connection": true,
+        "self_protect": true,
+        "legacy_callbacks": false,
+        "load_dll": "",
+        "exit": false,
+        "skip_registry": false,
+        "skip_hooks": false
+      },
+      "dlc": {
+        "unlock_all": false,
+        "overrides": {}
+      },
+      "crack": {
+        "overrides": {
+          "": "RUNE"
+        }
+      },
+      "avatar": {
+        "small": "avatar\\avatar32.bmp",
+        "medium": "avatar\\avatar64.bmp",
+        "large": "avatar\\avatar184.bmp"
+      },
+      "controller": {
+        "enabled": true,
+        "force_controller": "XboxOne",
+        "rumble": true,
+        "swap_face_buttons": false,
+        "raw_input": false,
+        "left_joystick_deadzone": 10000,
+        "right_joystick_deadzone": 10000,
+        "left_trigger_deadzone": 26000,
+        "right_trigger_deadzone": 26000
+      },
+      "interfaces": {
+        "overrides": {}
+      },
+      "achievements": {
+        "whitelist": {},
+        "icons": {}
+      }
+    },
+    "goldberg_settings": {
+      "goldberg_mode": "regular",
+      "user": {
+        "account_name": "steam_user",
+        "steam_id": "22202",
+        "language": "english",
+        "ip_country": "US",
+        "use_local_save": true,
+        "local_save_path": "steam_settings/saves"
+      },
+      "main": {
+        "enable_overlay": true,
+        "enable_leaderboards": true,
+        "enable_achievements": true,
+        "enable_stats": true,
+        "listen_port": "47584",
+        "offline": false,
+        "disable_networking": false
+      },
+      "app": {
+        "is_beta_branch": false,
+        "branch_name": "public",
+        "unlock_all_dlcs": true
+      },
+      "overlay": {
+        "enable_experimental_overlay": false,
+        "hook_delay_sec": 0,
+        "renderer_detector_timeout_sec": 15,
+        "disable_achievement_notification": false,
+        "disable_friend_notification": false,
+        "disable_achievement_progress": true,
+        "disable_warning_any": false,
+        "disable_warning_bad_appid": false,
+        "disable_warning_local_save": false,
+        "overlay_always_show_fps": false,
+        "overlay_always_show_playtime": false
+      },
+      "dlc_overrides": {},
+      "experimental_settings": {
+        "disable_lan_only": false
+      },
+      "steam_client_loader_settings": {
+        "exe_override": "",
+        "exe_command_line": "",
+        "force_inject_steam_client": true,
+        "force_inject_game_overlay_renderer": true,
+        "ignore_injection_error": true,
+        "ignore_loader_arch_difference": false,
+        "persistence_mode": 0,
+        "resume_by_debugger": false,
+        "dlls_to_inject_folder": ""
+      }
+    },
+    "fetch_dlcs_from_steam": true,
+    "generate_emu_game_info": true
+  },
+  "steam_stub_unpacker_settings": {
+    "exe_override": "",
+    "keep_bind": true,
+    "keep_stub": false,
+    "realign": false,
+    "recalc_checksum": false,
+    "use_experimental_features": false
+  },
+  "hypervisor_settings": {
+    "exe_override": "",
+    "auto_load_hv": false
+  },
+  "extra_files_settings": {
+    "source_path": "extras\\global",
+    "extract_with_7zip": true
+  },
+  "crack_only_settings": {
+    "output_path": "output",
+    "compress_with_7zip": false
+  }
+}
