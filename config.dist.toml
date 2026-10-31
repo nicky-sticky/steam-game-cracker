@@ -1,0 +1,8 @@
+# Path to 7-Zip executable
+zip7_path = "C:\\Program Files\\7-Zip\\7z.exe"
+
+# List of root directories to scan for game folders
+game_root_dirs = []
+
+# Filename for crack information marker
+crack_info_filename = "!crack.info"

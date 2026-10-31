@@ -1,0 +1,4 @@
+pefile==2024.8.26
+python-dotenv==1.2.3
+steam[client]==1.4.4
+textual==8.2.8

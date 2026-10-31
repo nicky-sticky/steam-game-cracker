@@ -1,0 +1,17 @@
+[project]
+name = "Steam Game Cracker"
+package = "steam_game_cracker"
+venv = "env"
+default = "cli"
+elevate = true
+
+[commands]
+cli = { cmd = ["python", "-m", "steam_game_cracker.cli"], description = "Command-line interface" }
+tui = { cmd = ["python", "-m", "steam_game_cracker.tui"], description = "Interactive Textual TUI" }
+scan = { cmd = ["python", "-m", "steam_game_cracker.cli", "scan"], description = "Scan Steam for cracks" }
+library = { cmd = ["python", "-m", "steam_game_cracker.cli", "library"], description = "Show the game library" }
+crack = { cmd = ["python", "-m", "steam_game_cracker.cli", "target", "crack", "apply"], description = "Apply a crack to a target" }
+restore = { cmd = ["python", "-m", "steam_game_cracker.cli", "target", "crack", "restore"], description = "Restore a cracked target" }
+fw-add = { cmd = ["python", "-m", "steam_game_cracker.cli", "target", "firewall", "add"], description = "Add a firewall rule for a target" }
+fw-refresh = { cmd = ["python", "-m", "steam_game_cracker.cli", "target", "firewall", "refresh"], description = "Refresh firewall rules" }
+fw-remove = { cmd = ["python", "-m", "steam_game_cracker.cli", "target", "firewall", "remove"], description = "Remove a firewall rule" }

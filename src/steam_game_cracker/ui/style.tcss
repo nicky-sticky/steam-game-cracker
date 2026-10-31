@@ -1,0 +1,205 @@
+/* ==========================================================================
+   Canonical Textual TUI Stylesheet
+   Byte-Identical Standard for Python Application Suite
+   ========================================================================== */
+
+/* --------------------------------------------------------------------------
+   1. Global Screen & Application Layout
+   -------------------------------------------------------------------------- */
+Screen {
+    background: $background;
+    color: $text;
+    layout: vertical;
+}
+
+#app_title_bar {
+    height: 1;
+    background: $panel;
+    color: $text;
+    text-style: bold;
+    content-align: center middle;
+}
+
+Footer {
+    dock: bottom;
+    height: 1;
+    background: $surface;
+    color: $text-muted;
+}
+
+/* --------------------------------------------------------------------------
+   2. Navigation & Breadcrumb Bar
+   -------------------------------------------------------------------------- */
+Breadcrumb {
+    height: 1;
+    margin: 1 1 0 1;
+    padding: 0 1;
+    background: $surface;
+    color: $text;
+    link-color: $text-muted;
+    link-color-hover: $text;
+    link-background: transparent;
+    link-background-hover: $block-hover-background;
+    link-style: none;
+    link-style-hover: none;
+}
+
+/* --------------------------------------------------------------------------
+   3. Summary Hero Card & Metric Badges
+   -------------------------------------------------------------------------- */
+#summary, .summary-card, SelectionBar, #selection_bar {
+    height: auto;
+    margin: 1 1 0 1;
+    padding: 0 1;
+    border: solid $secondary;
+    background: $surface;
+}
+
+SelectionBar {
+    link-color: $success;
+    link-color-hover: $success;
+    link-background: transparent;
+    link-background-hover: $block-hover-background;
+    link-style: none;
+    link-style-hover: none;
+}
+
+.summary-inline {
+    margin: 1 1 0 1;
+    padding: 0 1;
+}
+
+/* --------------------------------------------------------------------------
+   4. Content Boxes & Data Containers
+   -------------------------------------------------------------------------- */
+OptionList {
+    height: auto;
+    max-height: 1fr;
+    margin: 1;
+    border: solid $secondary;
+    background: $panel-darken-1;
+}
+
+OptionList:focus {
+    background-tint: 0%;
+    border: solid $primary;
+}
+
+OptionList > .option-list--option-highlighted,
+OptionList:focus > .option-list--option-highlighted {
+    background: $block-cursor-blurred-background;
+    color: $text;
+    text-style: bold;
+}
+
+DataTable, RichLog {
+    height: 1fr;
+    margin: 1;
+    border: solid $secondary;
+    background: $panel-darken-1;
+}
+
+DataTable:focus {
+    background-tint: 0%;
+    border: solid $primary;
+}
+
+DataTable > .datatable--cursor,
+DataTable:focus > .datatable--cursor {
+    background: $block-cursor-blurred-background;
+    color: $text;
+    text-style: bold;
+}
+
+OptionList:focus, DataTable:focus, RichLog:focus {
+    border: solid $primary;
+}
+
+/* --------------------------------------------------------------------------
+   5. Form Controls & Interactive Inputs
+   -------------------------------------------------------------------------- */
+Input {
+    margin: 1;
+    border: solid $secondary;
+    background: $surface;
+    color: $text;
+}
+
+Input:focus {
+    border: solid $primary;
+}
+
+#search_input {
+    margin: 1 1 0 1;
+}
+
+Button {
+    margin: 1;
+    min-width: 16;
+    border: solid $secondary;
+    background: $surface;
+    color: $text;
+}
+
+Button:hover {
+    background: $primary;
+    color: $text;
+}
+
+Button:focus {
+    border: solid $primary;
+}
+
+/* --------------------------------------------------------------------------
+   6. Progress, Watcher & Execution Terminal
+   -------------------------------------------------------------------------- */
+#status_banner {
+    height: auto;
+    margin: 1 1 0 1;
+    padding: 0 1;
+    background: $surface;
+    border: solid $secondary;
+}
+
+#progress_log, #watch_log {
+    height: 1fr;
+    margin: 1;
+    border: solid $secondary;
+    background: $panel-darken-1;
+    color: $text;
+}
+
+#progress_log:focus, #watch_log:focus {
+    border: solid $primary;
+}
+
+.status-running {
+    border: solid $primary;
+    color: $primary;
+}
+
+.status-success {
+    border: solid $success;
+    color: $success;
+}
+
+.status-failed {
+    border: solid $error;
+    color: $error;
+}
+
+/* --------------------------------------------------------------------------
+   7. Dialogs, Prompts & Modal Overlays
+   -------------------------------------------------------------------------- */
+.modal-container {
+    align: center middle;
+    background: rgba(0, 0, 0, 0.7);
+}
+
+.dialog-box {
+    width: 60;
+    height: auto;
+    padding: 1 2;
+    background: $surface;
+    border: solid $primary;
+}
